@@ -12,6 +12,16 @@ Look what she said:
 
 > This is it!
 
+
+```golang
+
+type User struct {
+  Name string,
+  Address string
+}
+
+```
+
 ### Subtitle
 
 And now this:
