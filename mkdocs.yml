@@ -1,0 +1,49 @@
+site_name: Tech Blog Special
+site_description: A Simple Tech Blog
+
+nav: 
+  - Home: index.md
+  - Blog:
+    - blog/index.md
+    - 2022:
+      - blog/posts/welcome.md
+  - About: about.md
+
+theme:
+  name: 'material'
+  palette:
+    primary: 'blue grey'
+  features:
+    - navigation.tabs
+  font:
+    text: Noto Serif
+  #logo: assets/logo.png
+  #icon:
+  #  logo: material/Code 
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - footnotes
+  - pymdownx.tabbed:
+      alternate_style: true
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins:
+  - tags
+  - search
