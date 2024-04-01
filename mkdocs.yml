@@ -15,8 +15,8 @@ theme:
     primary: 'blue grey'
   features:
     - navigation.tabs
-  font:
-    text: Noto Serif
+  #font:
+  #  text: Noto Serif
   #logo: assets/logo.png
   #icon:
   #  logo: material/Code 
